@@ -21,19 +21,8 @@ export default {
   components: {
     UsersIcon
   },
-  data() {
-    return {
-      event: {
-        id: 1,
-        title: 'Beach Cleanup',
-        date: 'Tues Aug 19, 2020',
-        time: '6:00',
-        attendees: [
-          { id: 'abc123', name: 'Adam Cranston' },
-          { id: 'abc456', name: 'Fred Murtz' }
-        ]
-      }
-    }
+  props: {
+    event: Object
   }
 }
 </script>
