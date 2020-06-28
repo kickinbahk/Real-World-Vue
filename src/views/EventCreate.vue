@@ -15,8 +15,8 @@ import { mapState } from 'vuex'
 
 export default {
   computed: {
-    localComputed() {
-      return false
+    categoryLength() {
+      return this.$store.categories.length
     },
     ...mapState(['user', 'categories'])
   }
