@@ -8,6 +8,8 @@
         {{ category }}
       </li>
     </ul>
+
+    <p>{{ getEvent(1) }}</p>
   </div>
 </template>
 
@@ -18,6 +20,9 @@ export default {
   computed: {
     categoryLength() {
       return this.$store.getters.categoriesLength
+    },
+    getEvent() {
+      return this.$store.getters.getEventById
     },
     ...mapState(['user', 'categories'])
   }
