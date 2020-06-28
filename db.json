@@ -89,6 +89,24 @@
       "date": "2020-06-30T21:17:00.000Z",
       "time": "13:00",
       "attendees": []
+    },
+    {
+      "id": 9920008,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Hike to the River",
+      "description": "Hike along the bitterroot river looking for fossils",
+      "location": "Darby, Montana",
+      "date": "2020-07-02T21:28:00.000Z",
+      "time": "9:00",
+      "attendees": []
     }
   ]
 }
