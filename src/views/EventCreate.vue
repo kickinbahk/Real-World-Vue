@@ -9,21 +9,19 @@
       </li>
     </ul>
 
-    <p>{{ getEvent(1) }}</p>
+    <p>{{ getEventById(2) }}</p>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
   computed: {
     categoryLength() {
       return this.$store.getters.categoriesLength
     },
-    getEvent() {
-      return this.$store.getters.getEventById
-    },
+    ...mapGetters(['getEventById']),
     ...mapState(['user', 'categories'])
   }
 }
