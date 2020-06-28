@@ -9,7 +9,7 @@
       <div class="icon-wrapper">
         <users-icon size="1.5x" class="icon"></users-icon>
       </div>
-      <span>{{ event.attendees.length }} attending</span>
+      <span>{{ event.attendees ? event.attendees.length : 0 }} attending</span>
     </div>
   </router-link>
 </template>
