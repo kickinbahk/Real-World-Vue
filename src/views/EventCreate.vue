@@ -2,6 +2,7 @@
   <div>
     <h1>Create and Event, {{ user.name }}</h1>
     <p>This event was created by {{ user.id }}</p>
+    <p>There are {{ categoryLength }} categories of events</p>
     <ul>
       <li v-for="category in categories" :key="category">
         {{ category }}
@@ -16,7 +17,7 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     categoryLength() {
-      return this.$store.categories.length
+      return this.$store.getters.categoriesLength
     },
     ...mapState(['user', 'categories'])
   }
