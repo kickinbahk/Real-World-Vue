@@ -71,6 +71,24 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 5043593,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "housing",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Open Haus",
+      "description": "Come see our Haus",
+      "location": "In Da Haus",
+      "date": "2020-06-30T21:17:00.000Z",
+      "time": "13:00",
+      "attendees": []
     }
   ]
 }
